@@ -91,7 +91,7 @@ export default function Edit() {
          />
        </div>
        <br />
-       <button className="btn btn-secundary btn-sm" onClick={() => navigate(-1) }>Voltar</button>
+       <button className="btn btn-secundary btn-sm" onClick={() => navigate("/")}>Voltar</button>
        <div className="form-group">
          <input
            type="submit"

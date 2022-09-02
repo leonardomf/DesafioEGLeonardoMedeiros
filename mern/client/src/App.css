@@ -52,18 +52,18 @@ margin-top:35px;
 .navbar-nav{
   margin-right: 20px;
 }
-.tabletitulo{
-  max-width: 18ch;
+ td{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  max-width:1px;
+  min-width: 1px;
+} 
+.tabletdconteudo{
+/* margin-right: 250px; */
 }
-.tableconteudo{
-  max-width: 30ch;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.alert-success{
-  display: none;
-}
+td:first-child {  width:15% }
+td:first-child + td + td {  width:15% }
+
+
+

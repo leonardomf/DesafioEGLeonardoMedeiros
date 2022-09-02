@@ -9,8 +9,8 @@ import Button from 'react-bootstrap/Button';
 
 const Record = (props) => (
  <tr>
-   <td className="tabletitulo">{props.record.titulo}</td>
-   <td className="tableconteudo">{props.record.conteudo}</td>
+   <td>{props.record.titulo}</td>
+   <td className="tabletdconteudo">{props.record.conteudo}</td>
    <td>{props.record.data}</td>
    <td>
      <Link className="btn btn-primary btn-lg active btn-sm" style={{margin: "2px"}} to={`/edit/${props.record._id}`}>Editar</Link>
@@ -79,22 +79,22 @@ export default function RecordList() {
 
     
 
-    <div className="container">
+    <div className="container-fluid">
 
- 
-
-     <h3>Lista de matérias publicadas</h3>
+      <h3 style={{ marginTop: 40 }}>Lista de matérias publicadas</h3>
+     <div class="table-responsive-sm">
      <table className="table table-hover" style={{ marginTop: 20 }}>
        <thead class="thead-dark">
          <tr>
-           <th className="tabletitulo">Título</th>
-           <th className="tableconteudo">Conteúdo da matéria</th>
-           <th>Data de criação</th>
+           <th>Título</th>
+           <th>Conteúdo da matéria</th>
+           <th>Criado em</th>
            <th>Ação</th>
          </tr>
        </thead>
        <tbody>{recordList()}</tbody>
      </table>
+     </div>
    </div>
  );
 
