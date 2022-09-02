@@ -1,3 +1,23 @@
+# Desafio Editora Globo
+Aula de redux puro publicada em meu canal do youtube
+
+Instale as dependencias:
+
+```bash
+npm
+```
+
+Para rodar a aplicação e testar execute o comando:
+
+```bash
+cd client/npm start
+cd server/node server.js
+```
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
